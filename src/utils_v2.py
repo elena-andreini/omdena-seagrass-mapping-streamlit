@@ -28,7 +28,7 @@ get_model_info()
 
 
 
-@st.cache_data
+@st.cache_resource
 def retrieve_model():
     client = MlflowClient()
     MLFLOW_TRACKING_URI = os.getenv('MLFLOW_TRACKING_URI')
