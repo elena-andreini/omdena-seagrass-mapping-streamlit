@@ -23,7 +23,7 @@ def dice_loss_plus_2focal_loss(y_true, y_pred):
     return total_loss
 
 
-set_secrets()
+#set_secrets()
 get_model_info()
 
 
