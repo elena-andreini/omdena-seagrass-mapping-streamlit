@@ -6,7 +6,7 @@ from tensorflow import keras
 import segmentation_models as sm
 import mlflow
 from mlflow.tracking import MlflowClient
-from env import set_secrets, get_model_info
+from env import *
 import streamlit as st
 
 @keras.saving.register_keras_serializable(package="my_package", name="dice_loss_plus_2focal_loss")
