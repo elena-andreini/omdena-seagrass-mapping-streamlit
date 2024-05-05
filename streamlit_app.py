@@ -35,7 +35,7 @@ display_image('https://upload.wikimedia.org/wikipedia/commons/4/45/Sanc0209_-_Fl
 
 
 ################### FILE UPLOAD SECTION #######################
-uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
+# uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
 
 
