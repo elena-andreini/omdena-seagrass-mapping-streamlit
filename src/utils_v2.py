@@ -32,7 +32,7 @@ get_model_info()
 def retrieve_model():
     client = MlflowClient()
     #####
-    MLFLOW_TRACKING_URI = 'https://dagshub.com/Omdena/TriesteItalyChapter_MappingSeagrassMeadows.mlflow')
+    MLFLOW_TRACKING_URI = 'https://dagshub.com/Omdena/TriesteItalyChapter_MappingSeagrassMeadows.mlflow'
     RUN_ID = '42909ca2a5ef4a4c94e5fe030380e5e8'
     #####
   #  MLFLOW_TRACKING_URI = os.getenv('MLFLOW_TRACKING_URI')
