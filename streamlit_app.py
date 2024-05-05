@@ -77,5 +77,5 @@ def main():
         #st.write("Confidence: ", prediction[2])
 
 
-# if __name__ == "__main__":
-    # main()
+if __name__ == "__main__":
+    main()
