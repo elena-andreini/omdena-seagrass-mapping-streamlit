@@ -40,7 +40,7 @@ display_image('https://upload.wikimedia.org/wikipedia/commons/4/45/Sanc0209_-_Fl
 
 ########
 
-st.title("Mapping seagrass with Satellite Imagery and Deep Learning")
+st.title("Mapping seagrass with Satellite Imagery, Deep Learning and Computer Vision<")
 st.write("Choose an image to classify")
     
 
