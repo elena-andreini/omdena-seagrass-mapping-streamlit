@@ -39,9 +39,9 @@ display_image('https://upload.wikimedia.org/wikipedia/commons/4/45/Sanc0209_-_Fl
 
 
 ########
-
-st.title("Mapping seagrass with Satellite Imagery, Deep Learning and Computer Vision")
-st.write("Choose an image to classify")
+st.markdown("<h4 style='text-align: center; font-family: Segoe UI;'>A web-based pixel-level Classification Model for identifying seagrass in sattelite images</h3>", unsafe_allow_html=True)
+# st.title("Mapping seagrass with Satellite Imagery, Deep Learning and Computer Vision")
+# st.write("Choose an image to classify")
     
 
 #######
