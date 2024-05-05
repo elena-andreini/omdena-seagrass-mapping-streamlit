@@ -25,7 +25,7 @@ def dice_loss_plus_2focal_loss(y_true, y_pred):
 
 #set_secrets()
 get_model_info()
-
+MLFLOW_TRACKING_URI = 'https://dagshub.com/Omdena/TriesteItalyChapter_MappingSeagrassMeadows.mlflow')
 
 
 @st.cache_resource
