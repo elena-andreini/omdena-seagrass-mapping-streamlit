@@ -8,8 +8,8 @@ import utils_v2
 from model_utils import *
 
 ########
-import streamlit as st
-from streamlit_extras.let_it_rain import rain
+from streamlit_extras.let_it_rain
+import rain
 from streamlit_extras.colored_header import colored_header
 # from page_utils import font_modifier, display_image
 
