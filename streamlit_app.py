@@ -44,7 +44,7 @@ display_image('https://upload.wikimedia.org/wikipedia/commons/4/45/Sanc0209_-_Fl
 
 #######
 
-make_font_poppins()
+# make_font_poppins()
 ########
 
 # Streamlit app
