@@ -1,10 +1,10 @@
-tensorflow==2.15.0
-keras==2.15.0
-tifffile==2024.4.24
-mlflow==2.12.1
+tensorflow
+keras
+tifffile
+mlflow
 cloudpickle
-segmentation-models==1.0.1
-matplotlib==3.8.4
+segmentation-models
+matplotlib
 
 streamlit-camera-input-live==0.2.0
 streamlit-card==1.0.0
