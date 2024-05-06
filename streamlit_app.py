@@ -50,14 +50,14 @@ st.title("Mapping seagrass with Satellite Imagery, Deep Learning and Computer Vi
 ########
 
 # Streamlit app
-def main():
+def main(image_file):
     model = utils_v2.retrieve_model()
     
     st.title("Mapping seagrass with Satellite Imagery and Deep Learning")
     st.write("Choose an image to classify")
     
     # Choose an image file in the sidebar
-    image_file = st.sidebar.file_uploader("Choose an image file", type=["tif"])
+    # image_file = st.sidebar.file_uploader("Choose an image file", type=["tif"])
     
     if image_file is not None:
         # Display the chosen image
@@ -81,4 +81,5 @@ def main():
 
 if __name__ == "__main__":
     # pass
-    main()
+    img_file = st.sidebar.file_uploader("Choose an image file", type=["tif"])
+    main(img_file)
