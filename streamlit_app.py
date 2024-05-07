@@ -82,4 +82,4 @@ def main(image_file):
 if __name__ == "__main__":
     # pass
     img_file = st.sidebar.file_uploader("Choose an image file", type=["tif"])
-    # main(img_file)
+    main(img_file)
