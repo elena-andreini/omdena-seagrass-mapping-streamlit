@@ -3,7 +3,16 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
+import tifffile as tiff
+import tensorflow as tf
+# import numpy as np
 
+# Loading the images & masks as an array
+def load_image(image_path, band_idxs=range(12)):
+    print(f'image path {image_path}')
+    img_arr = tiff.imread(image_path)[:, :, band_idxs]
+    print(f'image {image_path} loaded')
+    return img_arr
 
 #####
 def display_image(url, caption=None):
