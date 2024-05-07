@@ -116,7 +116,7 @@ def main(image_file):
         ax1.imshow(image[:, :, 3])
         ax2.imshow(y)
         # Display the image in streamlit
-        st.pyplot(fig)
+        st.sidebar.pyplot(fig)
         # Make a prediction and display it
         #prediction = predict(load_image(image_file))
         #st.write("Prediction: ", prediction[1])
@@ -126,4 +126,4 @@ def main(image_file):
 if __name__ == "__main__":
     # pass
     img_file = st.sidebar.file_uploader("Choose an image to classify", type=["tif"])
-    st.sidebar.main(img_file)
+    main(img_file)
