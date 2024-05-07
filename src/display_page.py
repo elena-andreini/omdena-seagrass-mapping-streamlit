@@ -111,4 +111,4 @@ def dp_main(image_file):
 # Choose an image file in the sidebar
 img_file = st.sidebar.file_uploader("Choose an image file", type=["tif"])
 fg = dp_main(img_file)
-st.image(pyplot(fg))
+st.image(plt(fg))
