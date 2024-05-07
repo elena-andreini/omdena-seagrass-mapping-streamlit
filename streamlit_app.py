@@ -97,8 +97,8 @@ def retrieve_model():
 def main(image_file):
     model = retrieve_model()
     
-    st.title("Mapping seagrass with Satellite Imagery and Deep Learning")
-    st.write("Choose an image to classify")
+    # st.title("Mapping seagrass with Satellite Imagery and Deep Learning")
+    # st.write("Choose an image to classify")
     
     # Choose an image file in the sidebar
     # image_file = st.sidebar.file_uploader("Choose an image file", type=["tif"])
@@ -126,4 +126,5 @@ def main(image_file):
 if __name__ == "__main__":
     # pass
     img_file = st.sidebar.file_uploader("Choose an image file", type=["tif"])
+    st.write("Choose an image to classify")
     main(img_file)
