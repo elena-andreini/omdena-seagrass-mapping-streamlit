@@ -61,6 +61,19 @@ from mlflow.tracking import MlflowClient
 # from env import *
 # import streamlit as st
 
+@keras.saving.register_keras_serializable(package="my_package", name="dice_loss_plus_2focal_loss")
+def dice_loss_plus_2focal_loss(y_true, y_pred):
+    # Compute dice loss
+    dice_loss = sm.losses.DiceLoss(class_weights=weights)(y_true, y_pred)
+
+    # Compute focal loss
+    focal_loss = sm.losses.CategoricalFocalLoss()(y_true, y_pred)
+
+    # Combine dice loss and focal loss with a weighting factor
+    total_loss = dice_loss + (2 * focal_loss)
+
+    return total_loss
+
 @st.cache_resource
 def retrieve_model():
     client = MlflowClient()
