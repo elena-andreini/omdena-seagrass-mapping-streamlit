@@ -102,8 +102,13 @@ def dp_main(image_file):
         ax1.imshow(image[:, :, 3])
         ax2.imshow(y)
         # Display the image in streamlit
-        st.pyplot(fig)
+        return fig
         # Make a prediction and display it
         #prediction = predict(load_image(image_file))
         #st.write("Prediction: ", prediction[1])
         #st.write("Confidence: ", prediction[2])
+
+# Choose an image file in the sidebar
+img_file = st.sidebar.file_uploader("Choose an image file", type=["tif"])
+fg = dp_main(img_file)
+pyplot(fg)
