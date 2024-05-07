@@ -7,6 +7,7 @@ import numpy as np
 import utils_v2
 # from env import *
 from model_utils import *
+from display_page import dp_main
 
 ########
 from streamlit_extras.let_it_rain import rain
@@ -126,4 +127,4 @@ def main(image_file):
 if __name__ == "__main__":
     # pass
     img_file = st.sidebar.file_uploader("Choose an image to classify", type=["tif"])
-    main(img_file)
+    dp_main(img_file)
