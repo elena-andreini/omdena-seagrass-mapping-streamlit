@@ -125,6 +125,5 @@ def main(image_file):
 
 if __name__ == "__main__":
     # pass
-    img_file = st.sidebar.file_uploader("Choose an image file", type=["tif"])
-    st.sidebar.write("Choose an image to classify")
-    main(img_file)
+    img_file = st.sidebar.file_uploader("Choose an image to classify", type=["tif"])
+    st.sidebar.main(img_file)
