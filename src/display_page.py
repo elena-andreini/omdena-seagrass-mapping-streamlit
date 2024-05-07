@@ -58,7 +58,7 @@ def retrieve_model():
 #########
 
 # Streamlit app
-def main(image_file):
+def dp_main(image_file):
     model = retrieve_model()
     
     # st.title("Mapping seagrass with Satellite Imagery and Deep Learning")
