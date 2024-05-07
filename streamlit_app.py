@@ -51,7 +51,7 @@ st.title("Mapping seagrass with Satellite Imagery, Deep Learning and Computer Vi
 
 # Streamlit app
 def main(image_file):
-    model = utils_v2.retrieve_model()
+    model = retrieve_model()
     
     st.title("Mapping seagrass with Satellite Imagery and Deep Learning")
     st.write("Choose an image to classify")
