@@ -2,6 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 import utils_v2
+from model_utils import *
 
 import tifffile as tiff
 import tensorflow as tf
@@ -37,21 +38,9 @@ def display_image(url, caption=None):
 
 ##############
 
-
-
-
-
-#########
-
 # Streamlit app
 def dp_main(image_file):
     model = utils_v2.retrieve_model()
-    
-    # st.title("Mapping seagrass with Satellite Imagery and Deep Learning")
-    # st.write("Choose an image to classify")
-    
-    # Choose an image file in the sidebar
-    # image_file = st.sidebar.file_uploader("Choose an image file", type=["tif"])
     
     if image_file is not None:
         # Display the chosen image
@@ -59,7 +48,7 @@ def dp_main(image_file):
         X = preprocess_image(image)
         y = model.predict(X)
         y = np.squeeze(y, axis=0)
-        #st.image(image, caption="Chosen Image", use_column_width=True)
+        
         # Create a plot
         plt.axis('off')
         fig, (ax1, ax2) = plt.subplots(1, 2)
@@ -67,6 +56,7 @@ def dp_main(image_file):
         ax2.imshow(y)
         # Display the image in streamlit
         st.pyplot(fig)
+        
         # Make a prediction and display it
         # prediction = predict(load_image(image_file))
         # st.write("Prediction: ", prediction[1])
