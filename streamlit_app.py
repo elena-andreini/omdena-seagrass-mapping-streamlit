@@ -36,9 +36,8 @@ def homepage():
     display_image('https://upload.wikimedia.org/wikipedia/commons/4/45/Sanc0209_-_Flickr_-_NOAA_Photo_Library.jpg')
 
 def about():
-    st.title("About Page")
-    st.write("This is the about page.")
-    # import streamlit as st
+    # st.title("About Page")
+    # st.write("This is the about page.")
     # from page_utils import font_modifier, display_image
     
     # display_image.display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
