@@ -105,7 +105,7 @@ def dp_main(image_file):
         st.pyplot(fig)
         # Make a prediction and display it
         # prediction = predict(load_image(image_file))
-        prediction = predict(image_file)
+        prediction = predict(image)
         st.write("Prediction: ", prediction[1])
         st.write("Confidence: ", prediction[2])
 
