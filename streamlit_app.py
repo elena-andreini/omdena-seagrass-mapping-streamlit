@@ -125,8 +125,7 @@ show_radio_buttons = False  # Set to True to show the radio buttons
 
 if show_radio_buttons:
     page_selection = st.sidebar.radio("Where do you want to go?", list(pages.keys()))
-else:
-    page_selection  = None
+
 
 # Run the selected page function
 pages[page_selection]()
