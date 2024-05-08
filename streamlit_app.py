@@ -110,7 +110,7 @@ def main(image_file):
         X = preprocess_image(image)
         y = model.predict(X)
         y = np.squeeze(y, axis=0)
-        #st.image(image, caption="Chosen Image", use_column_width=True)
+        st.image(image, caption="Chosen Image", use_column_width=True)
         # Create a plot
         plt.axis('off')
         fig, (ax1, ax2) = plt.subplots(1, 2)
@@ -126,7 +126,7 @@ def main(image_file):
 
 if __name__ == "__main__":
     # pass
-    img_file = st.sidebar.file_uploader("Choose an image to classify", type=["tif"])
+    # img_file = st.sidebar.file_uploader("Choose an image to classify", type=["tif"])
     # dp_main(img_file)
 
     # import streamlit as st 
