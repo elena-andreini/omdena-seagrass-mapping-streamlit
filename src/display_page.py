@@ -108,8 +108,8 @@ def dp_main(image_file):
         # st.write("Prediction: ", prediction[1])
         # st.write("Confidence: ", prediction[2])
        
-        st.write("Prediction: ", y[1])
-        st.write("Confidence: ", y[2])
+        # st.write("Prediction: ", y[1])
+        # st.write("Confidence: ", y[2])
 
         # Create two columns with equal width
         col1, col2 = st.columns(2)
