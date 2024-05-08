@@ -89,7 +89,7 @@ def about():
                 """
                 ,unsafe_allow_html=True)
     
-    font_modifier.make_font_poppins()
+    # font_modifier.make_font_poppins()
 def contact():
     # st.title("Contact Page")
     # st.write("Contact us at example@example.com")
