@@ -105,14 +105,8 @@ def dp_main(image_file):
         st.pyplot(fig)
         # Make a prediction and display it
         # prediction = predict(load_image(image_file))
-        prediction = predict(image)
+        prediction = y
         st.write("Prediction: ", prediction[1])
         st.write("Confidence: ", prediction[2])
-
-# Choose an image file in the sidebar
-# img_file = st.sidebar.file_uploader("Choose an image file", type=["tif"])
-# dp_main(img_file)
-# st.image(fg)
-
-
+     
 
