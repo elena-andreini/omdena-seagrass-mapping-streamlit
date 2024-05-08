@@ -150,7 +150,8 @@ if __name__ == "__main__":
     def contact():
         st.title("Contact Page")
         st.write("Contact us at example@example.com")
-        dp_main()
+        img_file = st.sidebar.file_uploader("Choose an image file", type=["tif"])
+        dp_main(img_file)
     # Create a dictionary to map page names to their respective functions
     pages = {
         "Home": homepage,
