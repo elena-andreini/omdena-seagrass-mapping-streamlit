@@ -92,21 +92,22 @@ def about():
 def classify():
     # st.title("Contact Page")
     # st.write("Contact us at example@example.com")
-    st.title("Mapping seagrass with Satellite Imagery and Deep Learning")
+    display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
+    # st.title("Mapping seagrass with Satellite Imagery and Deep Learning")
     img_file = st.file_uploader("Choose an image to classify", type=["tif"])
     dp_main(img_file)
 
 def guide():
-    pass
+    display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
 
 def datasets():
-    pass
+    display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
 
 def repository():
-    pass
+    display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
 
 def gallery():
-    pass
+    display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
 # Create a dictionary to map page names to their respective functions
 pages = {
     "Home": homepage,
