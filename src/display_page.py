@@ -4,9 +4,6 @@ import numpy as np
 import utils_v2
 from model_utils import *
 
-# import tifffile as tiff
-# import tensorflow as tf
-# import numpy as np
 
 
 # Streamlit app
