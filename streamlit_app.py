@@ -124,42 +124,4 @@ def retrieve_model():
     return model
 #########
 
-# Streamlit app
-def main(image_file):
-    model = retrieve_model()
-    
-    # st.title("Mapping seagrass with Satellite Imagery and Deep Learning")
-    # st.write("Choose an image to classify")
-    
-    # Choose an image file in the sidebar
-    # image_file = st.sidebar.file_uploader("Choose an image file", type=["tif"])
-    
-    if image_file is not None:
-        # Display the chosen image
-        image = load_image(image_file)
-        X = preprocess_image(image)
-        y = model.predict(X)
-        y = np.squeeze(y, axis=0)
-        st.image(image, caption="Chosen Image", use_column_width=True)
-        # Create a plot
-        plt.axis('off')
-        fig, (ax1, ax2) = plt.subplots(1, 2)
-        ax1.imshow(image[:, :, 3])
-        ax2.imshow(y)
-        # Display the image in streamlit
-        st.sidebar.pyplot(fig)
-        # Make a prediction and display it
-        #prediction = predict(load_image(image_file))
-        #st.write("Prediction: ", prediction[1])
-        #st.write("Confidence: ", prediction[2])
 
-
-# if __name__ == "__main__":
-    # pass
-    # img_file = st.sidebar.file_uploader("Choose an image to classify", type=["tif"])
-    # dp_main(img_file)
-    # homepage()
-    # import streamlit as st 
-
-    # Define functions for each page
-  
