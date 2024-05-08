@@ -154,11 +154,11 @@ def main(image_file):
         #st.write("Confidence: ", prediction[2])
 
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
     # pass
     # img_file = st.sidebar.file_uploader("Choose an image to classify", type=["tif"])
     # dp_main(img_file)
-    homepage()
+    # homepage()
     # import streamlit as st 
 
     # Define functions for each page
