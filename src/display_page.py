@@ -37,16 +37,6 @@ def display_image(url, caption=None):
 
 ##############
 
-import os
-import sys
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-os.environ["SM_FRAMEWORK"] = "tf.keras"
-from tensorflow import keras
-import segmentation_models as sm
-import mlflow
-from mlflow.tracking import MlflowClient
-# from env import *
-# import streamlit as st
 
 
 
