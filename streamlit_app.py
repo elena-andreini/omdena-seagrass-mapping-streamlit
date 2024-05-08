@@ -150,6 +150,7 @@ if __name__ == "__main__":
     def contact():
         st.title("Contact Page")
         st.write("Contact us at example@example.com")
+        dp_main()
     # Create a dictionary to map page names to their respective functions
     pages = {
         "Home": homepage,
