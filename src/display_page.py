@@ -109,7 +109,7 @@ def dp_main(image_file):
         #st.write("Confidence: ", prediction[2])
 
 # Choose an image file in the sidebar
-img_file = st.sidebar.file_uploader("Choose an image file", type=["tif"])
+# img_file = st.sidebar.file_uploader("Choose an image file", type=["tif"])
 # dp_main(img_file)
 # st.image(fg)
 
