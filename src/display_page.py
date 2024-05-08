@@ -104,7 +104,8 @@ def dp_main(image_file):
         # Display the image in streamlit
         st.pyplot(fig)
         # Make a prediction and display it
-        prediction = predict(load_image(image_file))
+        # prediction = predict(load_image(image_file))
+        prediction = predict(image_file)
         st.write("Prediction: ", prediction[1])
         st.write("Confidence: ", prediction[2])
 
