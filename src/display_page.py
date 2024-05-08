@@ -9,11 +9,7 @@ import tensorflow as tf
 # import numpy as np
 
 # Loading the images & masks as an array
-def load_image(image_path, band_idxs=range(12)):
-    print(f'image path {image_path}')
-    img_arr = tiff.imread(image_path)[:, :, band_idxs]
-    print(f'image {image_path} loaded')
-    return img_arr
+
 def preprocess_image(image_arr, num_bands=12):
      # Image preprocessing
     image_arr = image_arr.astype('float32')
