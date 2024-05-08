@@ -12,9 +12,7 @@ import tensorflow as tf
 
 
     
-def show_image(image_path) :
-    im =load_image()
-    
+
 #####
 def display_image(url, caption=None):
     st.markdown("<p></p>",unsafe_allow_html=True)
