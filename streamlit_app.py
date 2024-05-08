@@ -7,7 +7,7 @@ import numpy as np
 import utils_v2
 # from env import *
 from model_utils import *
-from display_page import dp_main
+from display_page import main
 
 ########
 from streamlit_extras.let_it_rain import rain
@@ -95,7 +95,7 @@ def classify():
     display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
     # st.title("Mapping seagrass with Satellite Imagery and Deep Learning")
     img_file = st.file_uploader("Choose an image to classify", type=["tif"])
-    dp_main(img_file)
+    main(img_file)
 
 def guide():
     display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
