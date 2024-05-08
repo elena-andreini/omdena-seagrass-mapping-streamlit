@@ -7,7 +7,7 @@ from model_utils import *
 
 
 # Streamlit app
-def dp_main(image_file):
+def main(image_file):
     model = utils_v2.retrieve_model()
     
     if image_file is not None:
