@@ -110,5 +110,18 @@ def dp_main(image_file):
        
         st.write("Prediction: ", y[1])
         st.write("Confidence: ", y[2])
-     
+
+        # Create two columns with equal width
+        col1, col2 = st.columns(2)
+        
+        # In the first column, add a header and some content
+        with col1:
+            st.header("Prediction")
+            st.write(y[1]")
+        
+        # In the second column, add a header and some content
+        with col2:
+            st.header("Confidence")
+            st.write(y[2])
+
 
