@@ -83,7 +83,7 @@ def retrieve_model():
 def dp_main(image_file):
     model = retrieve_model()
     
-    # st.title("Mapping seagrass with Satellite Imagery and Deep Learning")
+    st.title("Mapping seagrass with Satellite Imagery and Deep Learning")
     # st.write("Choose an image to classify")
     
     # Choose an image file in the sidebar
@@ -114,23 +114,4 @@ def dp_main(image_file):
 # st.image(fg)
 
 
-# Define functions for each page
-def homepage():
-    st.title("Home Page")
-    st.write("Welcome to the home page!")
-def about():
-    st.title("About Page")
-    st.write("This is the about page.")
-def contact():
-    st.title("Contact Page")
-    st.write("Contact us at example@example.com")
-# Create a dictionary to map page names to their respective functions
-pages = {
-    "Home": homepage,
-    "About": about,
-    "Contact": contact
-}
-# Create a sidebar with page selection
-page_selection = st.sidebar.radio("Go to", list(pages.keys()))
-# Run the selected page function
-pages[page_selection]()
+
