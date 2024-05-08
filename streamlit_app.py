@@ -89,17 +89,33 @@ def about():
                 ,unsafe_allow_html=True)
     
     # font_modifier.make_font_poppins()
-def contact():
+def classify():
     # st.title("Contact Page")
     # st.write("Contact us at example@example.com")
     st.title("Mapping seagrass with Satellite Imagery and Deep Learning")
     img_file = st.file_uploader("Choose an image to classify", type=["tif"])
     dp_main(img_file)
+
+def guide():
+    pass
+
+def datasets():
+    pass
+
+def repository():
+    pass
+
+def gallery():
+    pass
 # Create a dictionary to map page names to their respective functions
 pages = {
     "Home": homepage,
     "About": about,
-    "Classify Image": contact
+    "Classify Image": classify,
+    "User Guide": guide,
+    "Datasets": datasets,
+    "Repository": repository,
+    "Gallery": gallery
 }
 # Create a sidebar with page selection
 page_selection = st.sidebar.radio("Go to", list(pages.keys()))
