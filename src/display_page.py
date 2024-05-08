@@ -117,7 +117,7 @@ def dp_main(image_file):
         # In the first column, add a header and some content
         with col1:
             st.header("Prediction")
-            st.write(y[1]")
+            st.write(y[1])
         
         # In the second column, add a header and some content
         with col2:
