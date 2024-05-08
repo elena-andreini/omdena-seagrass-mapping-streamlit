@@ -81,7 +81,7 @@ def retrieve_model():
 
 # Streamlit app
 def dp_main(image_file):
-    model = retrieve_model()
+    model = utils_v2.retrieve_model()
     
     # st.title("Mapping seagrass with Satellite Imagery and Deep Learning")
     # st.write("Choose an image to classify")
