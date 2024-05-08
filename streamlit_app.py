@@ -133,8 +133,8 @@ if __name__ == "__main__":
 
     # Define functions for each page
     def homepage():
-        st.title("Home Page")
-        st.write("Welcome to the home page!")
+        # st.title("Home Page")
+        # st.write("Welcome to the home page!")
         ################### HEADER SECTION #######################
         display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
         
@@ -150,13 +150,13 @@ if __name__ == "__main__":
     def contact():
         st.title("Contact Page")
         st.write("Contact us at example@example.com")
-        img_file = st.sidebar.file_uploader("Choose an image file", type=["tif"])
+        img_file = st.sidebar.file_uploader("Choose an image to classify", type=["tif"])
         dp_main(img_file)
     # Create a dictionary to map page names to their respective functions
     pages = {
         "Home": homepage,
         "About": about,
-        "Contact": contact
+        "Classify Image": contact
     }
     # Create a sidebar with page selection
     page_selection = st.sidebar.radio("Go to", list(pages.keys()))
