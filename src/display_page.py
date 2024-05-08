@@ -83,7 +83,7 @@ def retrieve_model():
 def dp_main(image_file):
     model = retrieve_model()
     
-    st.title("Mapping seagrass with Satellite Imagery and Deep Learning")
+    # st.title("Mapping seagrass with Satellite Imagery and Deep Learning")
     # st.write("Choose an image to classify")
     
     # Choose an image file in the sidebar
