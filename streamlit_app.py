@@ -23,6 +23,36 @@ def display_image(url, caption=None):
     st.markdown("<p></p>",unsafe_allow_html=True)
 
 ########
+  def homepage():
+        # st.title("Home Page")
+        # st.write("Welcome to the home page!")
+        ################### HEADER SECTION #######################
+        display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
+        
+        st.markdown("<h1 style='text-align: center; color: #F5EFE6;'>Mapping Seagrass Meadows with Satellite Imagery and Computer Vision</h1>",
+                    unsafe_allow_html=True)
+        st.markdown("<h4 style='text-align: center; color: #FFFFD0; font-family: Segoe UI;'>A web-based pixel-level Classification Model for identifying seagrass in sattelite images</h3>", unsafe_allow_html=True)
+        
+        display_image('https://upload.wikimedia.org/wikipedia/commons/4/45/Sanc0209_-_Flickr_-_NOAA_Photo_Library.jpg')
+
+def about():
+    st.title("About Page")
+    st.write("This is the about page.")
+def contact():
+    # st.title("Contact Page")
+    # st.write("Contact us at example@example.com")
+    img_file = st.sidebar.file_uploader("Choose an image to classify", type=["tif"])
+    dp_main(img_file)
+# Create a dictionary to map page names to their respective functions
+pages = {
+    "Home": homepage,
+    "About": about,
+    "Classify Image": contact
+}
+# Create a sidebar with page selection
+page_selection = st.sidebar.radio("Go to", list(pages.keys()))
+# Run the selected page function
+pages[page_selection]()
 
 
 ################### HEADER SECTION #######################
@@ -132,33 +162,4 @@ if __name__ == "__main__":
     # import streamlit as st 
 
     # Define functions for each page
-    def homepage():
-        # st.title("Home Page")
-        # st.write("Welcome to the home page!")
-        ################### HEADER SECTION #######################
-        display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
-        
-        st.markdown("<h1 style='text-align: center; color: #F5EFE6;'>Mapping Seagrass Meadows with Satellite Imagery and Computer Vision</h1>",
-                    unsafe_allow_html=True)
-        st.markdown("<h4 style='text-align: center; color: #FFFFD0; font-family: Segoe UI;'>A web-based pixel-level Classification Model for identifying seagrass in sattelite images</h3>", unsafe_allow_html=True)
-        
-        display_image('https://upload.wikimedia.org/wikipedia/commons/4/45/Sanc0209_-_Flickr_-_NOAA_Photo_Library.jpg')
-
-    def about():
-        st.title("About Page")
-        st.write("This is the about page.")
-    def contact():
-        # st.title("Contact Page")
-        # st.write("Contact us at example@example.com")
-        img_file = st.sidebar.file_uploader("Choose an image to classify", type=["tif"])
-        dp_main(img_file)
-    # Create a dictionary to map page names to their respective functions
-    pages = {
-        "Home": homepage,
-        "About": about,
-        "Classify Image": contact
-    }
-    # Create a sidebar with page selection
-    page_selection = st.sidebar.radio("Go to", list(pages.keys()))
-    # Run the selected page function
-    pages[page_selection]()
+  
