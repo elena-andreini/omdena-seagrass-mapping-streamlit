@@ -1,7 +1,7 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
-# import utils_v2
+import utils_v2
 from model_utils import *
 
 
