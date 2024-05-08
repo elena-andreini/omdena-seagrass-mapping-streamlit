@@ -119,7 +119,7 @@ pages = {
     "Gallery": gallery
 }
 # Create a sidebar with page selection
-page_selection = st.sidebar.radio("Go to", list(pages.keys()))
+page_selection = st.sidebar.radio("Make a choice", list(pages.keys()))
 # Run the selected page function
 pages[page_selection]()
 
