@@ -15,6 +15,25 @@ from streamlit_extras.colored_header import colored_header
 # from page_utils import font_modifier, display_image
 
 ########
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+
+
+def make_font_poppins():
+    with open("css/styles.css") as css:
+        st.markdown(f'<style>{css.read()}</style>' , unsafe_allow_html= True)
+
+    # Render the custom CSS style
+    st.markdown("<link href='https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap' rel='stylesheet'>", unsafe_allow_html=True)
+
+    # Hide Streamlit style
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+########
 
 def display_image(url, caption=None):
     st.markdown("<p></p>",unsafe_allow_html=True)
@@ -89,6 +108,7 @@ def about():
                 ,unsafe_allow_html=True)
     
     # font_modifier.make_font_poppins()
+    make_font_poppins()
 def classify():
     # st.title("Contact Page")
     # st.write("Contact us at example@example.com")
