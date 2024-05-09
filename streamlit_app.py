@@ -3,6 +3,7 @@ import sys
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'src'))
 import streamlit as st
 import utils_v2
+import pages
 from display_page import main
 
 ########
@@ -126,7 +127,7 @@ def gallery():
     display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
 # Create a dictionary to map page names to their respective functions
 pages = {
-    "Home": homepage,
+    "Home": pages.homepage,
     "About": about,
     "Classify Image": classify,
     "User Guide": guide,
