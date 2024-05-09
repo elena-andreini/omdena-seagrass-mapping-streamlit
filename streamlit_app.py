@@ -2,16 +2,12 @@ import os
 import sys
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'src'))
 import streamlit as st
-# import matplotlib.pyplot as plt
-# import numpy as np
 import utils_v2
-# from env import *
-# from model_utils import *
 from display_page import main
 
 ########
-from streamlit_extras.let_it_rain import rain
-from streamlit_extras.colored_header import colored_header
+# from streamlit_extras.let_it_rain import rain
+# from streamlit_extras.colored_header import colored_header
 # from page_utils import font_modifier, display_image
 
 ########
