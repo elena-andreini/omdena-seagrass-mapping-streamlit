@@ -1,5 +1,5 @@
 import streamlit as st
-from display_page import main
+from classify import main
 
 hide_streamlit_style = """
             <style>
