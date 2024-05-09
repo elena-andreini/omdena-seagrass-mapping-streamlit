@@ -24,7 +24,7 @@ hide_streamlit_style = """
 
 
 def make_font_poppins():
-    with open("css/styles.css") as css:
+    with open("src/styles.css") as css:
         st.markdown(f'<style>{css.read()}</style>' , unsafe_allow_html= True)
 
     # Render the custom CSS style
