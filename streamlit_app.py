@@ -1,27 +1,11 @@
 import os
 import sys
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'src'))
-# import streamlit as st
-# import utils_v2
+import streamlit as st
 import pages
 
-########
-# from streamlit_extras.let_it_rain import rain
-# from streamlit_extras.colored_header import colored_header
-# from page_utils import font_modifier, display_image
 
-########
-
-
-########
-
-
-
-########
-
-
-
-# Create a dictionary to map page names to their respective functions
+# Mmapping page names to their respective functions
 pages = {
     "Home": pages.homepage,
     "About": pages.about,
