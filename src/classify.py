@@ -7,14 +7,14 @@ import numpy as np
 import utils_v2
 from model_utils import *
 # Streamlit app
-def main():
+def main(image_file):
     model = utils_v2.retrieve_model()
     
-    st.title("Mapping seagrass with Satellite Imagery and Deep Learning")
-    st.write("Choose an image to classify")
+    # st.title("Mapping seagrass with Satellite Imagery and Deep Learning")
+    # st.write("Choose an image to classify")
     
     # Choose an image file in the sidebar
-    image_file = st.sidebar.file_uploader("Choose an image file", type=["tif"])
+    # image_file = st.sidebar.file_uploader("Choose an image file", type=["tif"])
     
     if image_file is not None:
         # Display the chosen image
