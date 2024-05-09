@@ -1,6 +1,7 @@
 import streamlit as st
 from classify import main
 
+# Utility functions
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
@@ -8,7 +9,7 @@ hide_streamlit_style = """
             </style>
             """
 
-
+# Styling function
 def make_font_poppins():
     with open("src/styles.css") as css:
         st.markdown(f'<style>{css.read()}</style>' , unsafe_allow_html= True)
@@ -19,32 +20,25 @@ def make_font_poppins():
     # Hide Streamlit style
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-########
-
+# Image display function
 def display_image(url, caption=None):
     st.markdown("<p></p>",unsafe_allow_html=True)
     image_url = url
     st.image(image_url, caption=caption, use_column_width=True)
     st.markdown("<p></p>",unsafe_allow_html=True)
 
-########
+# Home page display function
 def homepage():
-    # st.title("Home Page")
-    # st.write("Welcome to the home page!")
     ################### HEADER SECTION #######################
     display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
-    
     st.markdown("<h1 style='text-align: center; color: auto;'>Mapping Seagrass Meadows with Satellite Imagery and Computer Vision</h1>",
                 unsafe_allow_html=True)
     st.markdown("<h4 style='text-align: center; color: #FFFFD0; font-family: Segoe UI;'>A web-based pixel-level Classification Model for identifying seagrass in sattelite images</h3>", unsafe_allow_html=True)
-    
     display_image('https://upload.wikimedia.org/wikipedia/commons/4/45/Sanc0209_-_Flickr_-_NOAA_Photo_Library.jpg')
 
+# Information display function
 def about():
-    # st.title("About Page")
-    # st.write("This is the about page.")
-    # from page_utils import font_modifier, display_image
-    
+    ################### HEADER SECTION #######################
     display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
     
     ################### INFORMATION SECTION #######################
@@ -93,24 +87,40 @@ def about():
                 """
                 ,unsafe_allow_html=True)
     
-    # font_modifier.make_font_poppins()
     make_font_poppins()
+
+# Classification function
 def classify():
-    # st.title("Contact Page")
-    # st.write("Contact us at example@example.com")
+    ################### HEADER SECTION #######################
     display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
-    # st.title("Mapping seagrass with Satellite Imagery and Deep Learning")
+    
     img_file = st.file_uploader("Choose an image to classify", type=["tif"])
     main(img_file)
 
+# Placeholder function
 def guide():
+    ################### HEADER SECTION #######################
     display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
+    
+    ################### INFORMATION SECTION #######################
 
+# Placeholder function
 def datasets():
+     ################### HEADER SECTION #######################
     display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
+    
+    ################### INFORMATION SECTION #######################
 
+# Placeholder function
 def repository():
+    ################### HEADER SECTION #######################
     display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
+    
+    ################### INFORMATION SECTION #######################
 
+# Placeholder function
 def gallery():
+     ################### HEADER SECTION #######################
     display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
+    
+    ################### INFORMATION SECTION #######################
