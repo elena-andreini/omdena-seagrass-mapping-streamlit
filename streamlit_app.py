@@ -136,7 +136,7 @@ pages = {
     "User Guide": guide,
     "Datasets": datasets,
     "Repository": repository,
-    "Gallery": main()
+    "Gallery": about()
 }
 # Create a sidebar with page selection
 page_selection = st.sidebar.radio("Where do you want to go?", list(pages.keys()))
