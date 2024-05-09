@@ -94,25 +94,7 @@ def about():
     
     # font_modifier.make_font_poppins()
     make_font_poppins()
-def classify():
-    # st.title("Contact Page")
-    # st.write("Contact us at example@example.com")
-    display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
-    # st.title("Mapping seagrass with Satellite Imagery and Deep Learning")
-    img_file = st.file_uploader("Choose an image to classify", type=["tif"])
-    main(img_file)
 
-def guide():
-    display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
-
-def datasets():
-    display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
-
-def repository():
-    display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
-
-def gallery():
-    display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
 # Create a dictionary to map page names to their respective functions
 pages = {
     "Home": pages.homepage,
