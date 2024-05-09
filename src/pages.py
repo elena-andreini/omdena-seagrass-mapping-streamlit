@@ -1,4 +1,4 @@
-import strealit as st
+import streamlit as st
 
 hide_streamlit_style = """
             <style>
