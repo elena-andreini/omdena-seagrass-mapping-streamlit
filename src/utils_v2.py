@@ -30,13 +30,9 @@ get_model_info()
 @st.cache_resource
 def retrieve_model():
     client = MlflowClient()
-    ##### Direct injection of values instead of using environment VALES
-    MLFLOW_TRACKING_URI = 'https://dagshub.com/Omdena/TriesteItalyChapter_MappingSeagrassMeadows.mlflow'
-    RUN_ID = '42909ca2a5ef4a4c94e5fe030380e5e8'
-    #####
-  #  MLFLOW_TRACKING_URI = os.getenv('MLFLOW_TRACKING_URI')
+    MLFLOW_TRACKING_URI = os.getenv('MLFLOW_TRACKING_URI')
     mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
-    # RUN_ID = os.getenv('best_model_run_id')
+    RUN_ID = os.getenv('best_model_run_id')
     print(f'retrieving the model with run_id {RUN_ID}')
     custom_objects = {"dice_loss_plus_2focal_loss": dice_loss_plus_2focal_loss}
     with keras.saving.custom_object_scope(custom_objects):
