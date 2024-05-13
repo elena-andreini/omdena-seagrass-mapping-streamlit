@@ -5,3 +5,12 @@ mlflow==2.12.1
 cloudpickle==2.2.1
 segmentation-models==1.0.1
 matplotlib==3.8.4
+streamlit-camera-input-live
+streamlit-card
+streamlit-embedcode
+streamlit-extras
+streamlit-faker
+streamlit-image-coordinates
+streamlit-keyup
+streamlit-toggle-switch
+streamlit-vertical-slider

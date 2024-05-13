@@ -27,7 +27,6 @@ def dice_loss_plus_2focal_loss(y_true, y_pred):
 get_model_info()
 
 
-
 @st.cache_resource
 def retrieve_model():
     client = MlflowClient()
