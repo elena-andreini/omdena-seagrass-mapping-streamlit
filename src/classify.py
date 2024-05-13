@@ -1,6 +1,6 @@
-import os
-import sys
-sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'src'))
+# import os
+# import sys
+# sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'src'))
 import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
