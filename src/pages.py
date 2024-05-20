@@ -120,7 +120,29 @@ def repository():
 
 # Placeholder function
 def gallery():
-     ################### HEADER SECTION #######################
-    display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
+
+            ################### HEADER SECTION #######################
+            display_image('https://cdn-images-1.medium.com/max/800/0*vBDO0wwrvAIS5e1D.png')
+
     
-    ################### INFORMATION SECTION #######################
+            ################### INFORMATION SECTION #######################
+            
+            st.title("Gallery :film_frames:")
+            st.markdown("*This page displays the images, masks and their predictions for Greece and Croatia regions*")
+            
+            tab1, tab2 = st.tabs(['Greece','Croatia'])
+            
+            with tab1:
+                st.image("./model_utils/Greece_images/image1.JPG", caption='Greece image1')
+                st.image("./model_utils/Greece_images/image2.JPG", caption='Greece image1')
+                st.image("./model_utils/Greece_images/image3.JPG", caption='Greece image1')
+                st.image("./model_utils/Greece_images/image4.JPG", caption='Greece image1')
+                st.image("./model_utils/Greece_images/image5.JPG", caption='Greece image1')
+            
+            with tab2:
+                st.image("./model_utils/Croatia_images/image1.JPG", caption='Croatia image1')
+                st.image("./model_utils/Croatia_images/image2.JPG", caption='Croatia image1')
+                st.image("./model_utils/Croatia_images/image3.JPG", caption='Croatia image1')
+                st.image("./model_utils/Croatia_images/image4.JPG", caption='Croatia image1')
+                st.image("./model_utils/Croatia_images/image5.JPG", caption='Croatia image1')
+            
