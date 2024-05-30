@@ -17,7 +17,11 @@ def prediction(model,image,class_names):
     predicted_probs = model.predict(image)
     predicted_probs = np.squeeze(predicted_probs)
     predicted_mask = np.argmax(predicted_probs, axis=-1)
-    return predicted_mask
+    # Get the confidence score for the predicted class for each pixel
+    confidence_scores = np.max(predicted_probs, axis=-1)
+    # Calculate the mean confidence score across all pixels
+    mean_confidence_score = np.mean(confidence_scores)
+    return predicted_mask, mean_confidence_score
 
 def display_class_confidence(y_pred, class_names):
     num_classes = len(class_names)
@@ -30,8 +34,12 @@ def display_class_confidence(y_pred, class_names):
         st.info(f"Proportion of {class_name}: {confidence_score}")
 
 def main():
+
     st.title("Detecting the seagrass presence")
-    st.markdown("This app is for prediction of seagrass in the mediterranean sea.")
+    with st.expander("Information", expanded = True):
+        st.markdown("This app is for prediction of seagrass in the mediterranean sea.")
+        st.markdown("This application currently accepts only images of shape (256,256,12) from Sentinel-2 Level2A satellite.")
+        st.markdown("You can upload the images from either Greece or Croatia region.")
     
     image_file = st.file_uploader("Drop the picture of the location", type = ['tif'])
 
@@ -61,7 +69,7 @@ def main():
         if button:
             mask_arr = swm_land_mask(image, threshold=0.9)
             image = preprocess_image_mask(image, mask_arr)
-            predicted_mask = prediction(model, image, class_names)
+            predicted_mask, mean_confidence_score = prediction(model, image, class_names)
             cmap = plt.colormaps.get_cmap('viridis')
             colored_mask = cmap(predicted_mask/2)
             colored_mask = (colored_mask * 255).astype(np.uint8)
@@ -73,6 +81,9 @@ def main():
 
             st.write("The purple color in the mask is the seagrass, blue color is the water and yellow color is the land.")
             display_class_confidence(predicted_mask, class_names)
+            st.subheader("Mean Confidence Score")
+            mean_confidence_score = "{:.2f}%".format(mean_confidence_score * 100)
+            st.info(f"Mean Confidence Score: {mean_confidence_score}")
             
         os.remove("temp.tif")
     
