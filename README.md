@@ -41,7 +41,7 @@ docker run -p 8501:8501 omdena_app
 
 Go to ```http://localhost:8501/``` and visualize the app:
 
-**Running the App:**
+## **Running the App:**
 
 1. Open the project in your preferred IDE (e.g., VS Code).
 2. Start the Streamlit app:
@@ -56,17 +56,24 @@ Go to ```http://localhost:8501/``` and visualize the app:
 2. Click the "Predict" button.
 3. The predicted seagrass mask will be displayed alongside the original image.
 
-**Contributing:**
+## **Contributing:**
 
 We welcome contributions to this project. Please submit pull requests with proper documentation and testing.
 
-**License:**
+## **License:**
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-**Contact:**
+## **Contact:**
 
 For any questions or feedback, please contact [your email address or contact information].
+
+## Link to the streamlit application
+
+The application has been deployed on Streamlit community cloud. 
+Link ---> 
+
+## Screenshots from the application
 
 ![Home View](./src/Home.png)
 ![Gallery](./src/Gallery.png)
