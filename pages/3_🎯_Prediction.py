@@ -35,11 +35,13 @@ def display_class_confidence(y_pred, class_names):
 
 def main():
 
-    st.title("Detecting the seagrass presence")
-    with st.expander("Information", expanded = True):
-        st.markdown("This app is for prediction of seagrass in the mediterranean sea.")
-        st.markdown("This application currently accepts only images of shape (256,256,12) from Sentinel-2 Level2A satellite.")
-        st.markdown("You can upload the images from either Greece or Croatia region.")
+    st.title("🎯 Detecting Seagrass")
+    with st.expander("About", expanded = True):
+        st.info("This application is for prediction of seagrass in the mediterranean sea mainly for the Greece and Croatia regions."
+            " This application currently accepts only images of shape (256,256,12) from Sentinel-2 Level2A satellite."
+            " Kindly upload the images from either Greece or Croatia region.")
+
+    st.divider()
     
     image_file = st.file_uploader("Drop the picture of the location", type = ['tif'])
 

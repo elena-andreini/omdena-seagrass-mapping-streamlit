@@ -14,4 +14,6 @@ docker run -p 8501:8501 omdena_app
 
 Go to ```http://localhost:8501/``` and visualize the app:
 
-![Home View](./src/home_view.PNG)
+![Home View](./src/Home.png)
+![Gallery](./src/Gallery.png)
+![Prediction](./src/prediction.PNG)
