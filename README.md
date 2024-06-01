@@ -2,7 +2,8 @@
 
 This application uses Streamlit to predict the seagrass mask from an uploaded image.
 
-**Requirements:**
+**Main Requirements:**
+Check the requirements.txt file for more information.
 
 * Python 3.6+
 * keras==3.3.3

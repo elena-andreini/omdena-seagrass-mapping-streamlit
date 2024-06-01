@@ -85,6 +85,7 @@ def main():
             display_class_confidence(predicted_mask, class_names)
             st.subheader("Mean Confidence Score")
             mean_confidence_score = "{:.2f}%".format(mean_confidence_score * 100)
+            st.markdown("This score tells about the model's confidence in its predictions for the entire image.")
             st.info(f"Mean Confidence Score: {mean_confidence_score}")
             
         os.remove("temp.tif")
