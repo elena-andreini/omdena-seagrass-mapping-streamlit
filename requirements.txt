@@ -78,4 +78,4 @@ matplotlib==3.9.0
 streamlit==1.35.0
 tensorflow==2.16.1
 tifffile==2024.5.22
-opencv-python==4.9.0.80
+opencv-python-headless==4.9.0.80
