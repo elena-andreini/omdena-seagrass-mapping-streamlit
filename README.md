@@ -72,7 +72,7 @@ For any questions or feedback, please contact omdenatriestechapter@gmail.com.
 ## Link to the streamlit application
 
 The application has been deployed on Streamlit community cloud. 
-Link ---> 
+Link ---> https://omdena-seagrass-mapping-app-trieste.streamlit.app/
 
 ## Screenshots from the application
 
