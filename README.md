@@ -47,7 +47,7 @@ Go to ```http://localhost:8501/``` and visualize the app:
 1. Open the project in your preferred IDE (e.g., VS Code).
 2. Start the Streamlit app:
     ```bash
-    streamlit run app.py
+    streamlit run 1_🏠_Home.py
     ```
 3. Access the app in your web browser: http://localhost:8501
 
