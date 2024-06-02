@@ -47,7 +47,7 @@ def main():
 
     class_names = ['seagrass','water','land']
     
-    model = retreive_model('./saved_models/unet_summer_images_augmented_wcc_final.h5')
+    model = retreive_model("saved_models/unet_summer_images_augmented_wcc_final.h5")
 
     if image_file is not None:
         with open("temp.tif", "wb") as f:
