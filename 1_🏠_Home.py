@@ -53,4 +53,12 @@ st.markdown(
             """
             ,unsafe_allow_html=True)
 
+## Link to the datasets
+st.subheader("📂Links to the datasets used for model training")
+st.write("1. The manually cleaned images from Summer season which includes the images and masks from Greece and Croatia regions.\
+        [Link](https://dagshub.com/Omdena/TriesteItalyChapter_MappingSeagrassMeadows/src/main/data/summer_images_cleaned)")
+
+st.write("2. The augmented images split into train, test and validation sets. These augmentated images were generated from the manually cleaned images.\
+        [Link](https://dagshub.com/Omdena/TriesteItalyChapter_MappingSeagrassMeadows/src/main/data/summer_images_cleaned_augmented)")
+
 font_modifier.make_font_poppins()

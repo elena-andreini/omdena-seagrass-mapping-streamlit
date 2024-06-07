@@ -69,6 +69,14 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 For any questions or feedback, please contact omdenatriestechapter@gmail.com.
 
+## Link to the datasets
+
+The manually cleaned images from Summer season which includes the images and masks from Greece and Croatia regions.
+Link ---> https://dagshub.com/Omdena/TriesteItalyChapter_MappingSeagrassMeadows/src/main/data/summer_images_cleaned
+
+The augmented images split into train, test and validation sets. These augmentated images were generated from the manually cleaned images.
+Link ---> https://dagshub.com/Omdena/TriesteItalyChapter_MappingSeagrassMeadows/src/main/data/summer_images_cleaned_augmented
+
 ## Link to the streamlit application
 
 The application has been deployed on Streamlit community cloud. 
